@@ -41,7 +41,12 @@ html {
   width: 15rem;
   height: 4rem;
   border: 0.1rem solid #fff;
-  border-radius: 0.5rem; }
+  border-radius: 0.5rem;
+  transition: all 0.2s; }
+  .btn-primary:hover {
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2); }
+  .btn-primary:active {
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0); }
 
 .nav-bar {
   position: fixed;
