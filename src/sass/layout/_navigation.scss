@@ -1,0 +1,42 @@
+.nav-bar {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  background-image: linear-gradient(to right, #79f1a4, #0e5cad);
+  border-bottom: 2px solid white;
+
+  ul {
+    display: flex;
+  }
+
+  &__item {
+    margin-right: 4rem;
+    margin-top: 0.6rem;
+  }
+
+  &__anchor {
+    position: relative;
+    transition: all 0.2s;
+
+    &::after {
+      position: absolute;
+      display: inline-block;
+      content: "";
+      background: $black-1;
+      z-index: 100;
+      width: 0;
+      height: 2px;
+      left: 0;
+      bottom: -10px;
+      transition: all 0.3s;
+    }
+
+    &:hover:after {
+      width: 100%;
+    }
+
+    &:hover {
+      color: $black-1;
+    }
+  }
+}
