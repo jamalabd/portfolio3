@@ -52,12 +52,22 @@ html {
     background-color: #fff;
     color: #000; }
 
+.bg-video {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -100;
+  object-fit: cover; }
+
 .nav-bar {
   position: fixed;
   display: flex;
   width: 100%;
-  background-image: linear-gradient(to right, #79f1a4, #0e5cad);
-  border-bottom: 2px solid white; }
+  background-color: transparent;
+  border-bottom: 1px solid white;
+  z-index: 1000; }
   .nav-bar ul {
     display: flex; }
   .nav-bar__item {
@@ -81,3 +91,8 @@ html {
       width: 100%; }
     .nav-bar__anchor:hover {
       color: #000; }
+
+.header {
+  position: relative;
+  height: 90vh;
+  width: 100%; }
