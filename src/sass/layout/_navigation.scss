@@ -3,8 +3,10 @@
   display: flex;
   width: 100%;
   background-color: transparent;
-  border-bottom: 1px solid white;
-  z-index: 1000;
+  border-bottom: 1px solid $white-2;
+  z-index: 10000;
+  font-size: $font-size-1;
+  transition: all 0.5s;
 
   ul {
     display: flex;
@@ -17,7 +19,7 @@
 
   &__anchor {
     position: relative;
-    transition: all 0.2s;
+    transition: all 2s ease-in;
 
     &::after {
       position: absolute;
@@ -40,4 +42,10 @@
       color: $black-1;
     }
   }
+}
+
+.shrink {
+  border: none;
+  height: 6rem;
+  background-color: rgba($black-1, 0.8);
 }

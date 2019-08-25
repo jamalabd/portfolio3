@@ -1,0 +1,18 @@
+.skills {
+  &__title {
+    font-size: $font-size-0;
+    color: $orange-1;
+  }
+
+  &__paragraph {
+    display: inline-block;
+    font-size: $font-size-1;
+    color: #9B9B9B;
+    width: 60rem;
+  }
+}
+
+.heading-secondary {
+  font-size: $font-size-6;
+  margin-bottom: 1rem;
+}

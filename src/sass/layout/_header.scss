@@ -1,5 +1,21 @@
 .header {
   position: relative;
-  height: 90vh;
+  height: 98vh;
   width: 100%;
+  clip-path: polygon(50% 0%, 100% 0, 100% 75%, 50.3% 100%, 0 75%, 0 0);
+  // background-blend-mode: screen;
+  // background-image: linear-gradient(to right bottom, rgba($orange-1,.85),rgba($orange-2, .85));
+  &__text-box--1 {
+    text-align: center;
+    @include positioningAB;
+  }
+}
+
+.brand-name {
+  width: 12rem;
+
+  &__logo {
+    width: 100%;
+    height: 100%;
+  }
 }

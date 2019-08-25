@@ -21,36 +21,108 @@ body {
 html {
   font-size: 62.5%; }
 
-.nav-bar {
-  font-size: 1.6rem; }
-
-.btn-primary {
-  text-align: center;
-  font-size: 1.4rem;
-  font-weight: bold; }
+.heading-primary {
+  width: 90rem;
+  height: 40rem; }
+  .heading-primary--main {
+    color: #000;
+    display: block;
+    padding: 1rem 6rem;
+    font-size: 14rem;
+    font-weight: 400;
+    font-family: 'Lobster'; }
+  .heading-primary--sub {
+    color: #fff; }
 
 .u-padding-small {
   padding: 2rem;
   align-items: center; }
 
+.u-margin-bottom-small {
+  margin-bottom: 5rem; }
+
+.u-margin-bottomt-top-larg {
+  margin-bottom: 40rem;
+  margin-top: 40rem; }
+
+.u-margin-bottomt-top-med {
+  margin-bottom: 20rem;
+  margin-top: 20rem; }
+
 .u-margin-left-auto {
   margin-left: auto; }
 
-.btn-primary {
+.text-center {
+  text-align: center; }
+
+@keyframes bounceUpDown {
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
+    transform: translateY(0); }
+  40% {
+    transform: translateY(-30px); }
+  60% {
+    transform: translateY(-15px); } }
+
+.btn {
   padding: 0.6rem 0.8rem;
   width: 16rem;
   height: 4rem;
-  border: 0.1rem solid #fff;
-  border-radius: 0.5rem;
-  transition: all 0.2s; }
-  .btn-primary:hover {
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-align: center;
+  transition: all 0.2s;
+  display: inline-block; }
+  .btn:hover {
     box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
     transform: translateY(-2px); }
-  .btn-primary:active {
+  .btn:active {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-    transform: translateY(-1px);
-    background-color: #fff;
-    color: #000; }
+    transform: translateY(-1px); }
+  .btn-primary {
+    border: 0.1rem solid #fff;
+    border-radius: 0.5rem; }
+    .btn-primary:active {
+      background-color: #fff;
+      color: #000; }
+  .btn-secondary {
+    background-color: #000;
+    color: #fff;
+    border-radius: 0.5rem; }
+    .btn-secondary:active {
+      background-color: #fff;
+      color: #000; }
+
+.floating-btn {
+  text-align: center;
+  display: inline-block;
+  width: 10rem;
+  height: 10rem;
+  color: #000;
+  transition: all 0.2s;
+  animation: bounceUpDown 2s infinite; }
+  .floating-btn:hover {
+    transform: translateY(-4px); }
+  .floating-btn:active {
+    transform: translateY(-2px); }
+  .floating-btn--primary {
+    display: inline-block;
+    font-size: 7rem;
+    position: absolute;
+    top: 150%;
+    left: 45%; }
+
+.shrink-btn {
+  border: none;
+  background-color: #E46C28;
+  color: #fff; }
+  .shrink-btn:active {
+    border: none;
+    background-color: #000;
+    color: #E46C28; }
 
 .bg-video {
   position: absolute;
@@ -59,15 +131,18 @@ html {
   top: 0;
   left: 0;
   z-index: -100;
-  object-fit: cover; }
+  object-fit: cover;
+  opacity: 0.7; }
 
 .nav-bar {
   position: fixed;
   display: flex;
   width: 100%;
   background-color: transparent;
-  border-bottom: 1px solid white;
-  z-index: 1000; }
+  border-bottom: 1px solid #eee;
+  z-index: 10000;
+  font-size: 1.6rem;
+  transition: all 0.5s; }
   .nav-bar ul {
     display: flex; }
   .nav-bar__item {
@@ -75,7 +150,7 @@ html {
     margin-top: 0.6rem; }
   .nav-bar__anchor {
     position: relative;
-    transition: all 0.2s; }
+    transition: all 2s ease-in; }
     .nav-bar__anchor::after {
       position: absolute;
       display: inline-block;
@@ -92,7 +167,39 @@ html {
     .nav-bar__anchor:hover {
       color: #000; }
 
+.shrink {
+  border: none;
+  height: 6rem;
+  background-color: rgba(0, 0, 0, 0.8); }
+
 .header {
   position: relative;
-  height: 90vh;
-  width: 100%; }
+  height: 98vh;
+  width: 100%;
+  clip-path: polygon(50% 0%, 100% 0, 100% 75%, 50.3% 100%, 0 75%, 0 0); }
+  .header__text-box--1 {
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); }
+
+.brand-name {
+  width: 12rem; }
+  .brand-name__logo {
+    width: 100%;
+    height: 100%; }
+
+.skills__title {
+  font-size: 1.4rem;
+  color: #E46C28; }
+
+.skills__paragraph {
+  display: inline-block;
+  font-size: 1.6rem;
+  color: #9B9B9B;
+  width: 60rem; }
+
+.heading-secondary {
+  font-size: 3.5rem;
+  margin-bottom: 1rem; }
