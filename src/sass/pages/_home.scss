@@ -1,5 +1,9 @@
-.skills {
+.section {
+  position: relative;
+  height: 90rem;
+
   &__title {
+    margin-top: 10rem;
     font-size: $font-size-0;
     color: $orange-1;
   }
@@ -7,9 +11,13 @@
   &__paragraph {
     display: inline-block;
     font-size: $font-size-1;
-    color: #9B9B9B;
+    color: $grey-1;
     width: 60rem;
   }
+}
+
+.testimonials {
+  background-color: $grey-2;
 }
 
 .heading-secondary {

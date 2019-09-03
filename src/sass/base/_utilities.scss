@@ -7,18 +7,47 @@
 // <paddind>
 // <margin>
 
+.u-margin-bottom-xsmall {
+  margin-bottom: 1.5rem;
+}
+
 .u-margin-bottom-small {
   margin-bottom: 5rem;
 }
 
-.u-margin-bottomt-top-larg {
+.u-margin-bottom-med {
+  margin-bottom: 10rem;
+}
+
+.u-margin-bottom-med-2 {
+  margin-bottom: 20rem;
+}
+
+.u-margin-top-small {
+  margin-top: 5rem;
+}
+
+.u-margin-top-med {
+  margin-top: 10rem;
+}
+
+.u-margin-top-lg {
+  margin-top: 20rem;
+}
+
+.u-margin-bottom-top-larg {
   margin-bottom: 40rem;
   margin-top: 40rem;
 }
 
-.u-margin-bottomt-top-med {
+.u-margin-bottom-top-med {
   margin-bottom: 20rem;
   margin-top: 20rem;
+}
+
+.u-margin-bottom-top-small {
+  margin-bottom: 10rem;
+  margin-top: 10rem;
 }
 
 .u-margin-left-auto {

@@ -1,15 +1,36 @@
 *,
-*::before,
-*::after {
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  box-sizing: border-box;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+html {
+  font-size: 62.5%;
+  @include respond(tab-land) {
+    font-size: 56.25%; // 1rem = 9px, 9/16 = 56.25%
+  }
+  @include respond(tab-port) {
+    font-size: 50%; // 1rem = 8px, 8/16 = 50%
+  }
+  @include respond(big-desktop) {
+    font-size: 75%; // 1rem = 12px, 12/16 = 75%
+  }
 }
 
 a {
   text-decoration: none;
   color: $white-1;
 }
+
 li {
   list-style-type: none;
 }
