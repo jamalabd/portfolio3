@@ -50,7 +50,7 @@
   </header>
   <main class="main">
     <section class="skills section" id="skills">
-      <div class="u-margin-bottom-small u-margin-top-lg text-center">
+      <div class="u-margin-bottom-lg u-margin-top-lg text-center">
         <p class="section__title">
           Skills
         </p>
@@ -128,7 +128,7 @@
         </div>
     </section>
     <section class="work section" id="work">
-      <div class="u-margin-bottom-small u-margin-top-lg text-center">
+      <div class="u-margin-bottom-lg u-margin-top-lg text-center">
         <p class="section__title">
           Work
         </p>
@@ -158,7 +158,7 @@
       </div>
     </section>
     <section class="testimonials section" id="testimonials">
-      <div class="u-margin-bottom-small u-margin-top-lg text-center">
+      <div class="u-margin-bottom-small u-margin-top-small text-center">
         <p class="section__title">
           Testimonials
         </p>
@@ -200,9 +200,10 @@
           Contact
         </p>
         <form class="form" method="POST" role="form" action="https://formspree.io/jamalabdul47@gmail.com">
-          <input class="form__email input input-1" type="email" name="email" id="email" placeholder="Email" value="">
-          <input class="form__name input input-1" type="text" name="name" id="name" placeholder="Name" value="">
-          <textarea class="form__message input" name="message" rows="8" id="message" placeholder="Message"></textarea>
+          <input class="form__email input input-1" type="email" name="email" id="email" placeholder="Email" value="" required>
+          <input class="form__name input input-1" type="text" name="name" id="name" placeholder="Name" value="" required>
+          <input class="form__name input input-1" type="tel" name="tel" id="tel" placeholder="Phone" value="" pattern='^\d{10}$'>
+          <textarea class="form__message input" name="message" rows="8" id="message" placeholder="Message" required></textarea>
           <button class="form__submit btn btn-primary" type="submit" name="submit" id="submit-btn">Submit</button>
         </form>
 

@@ -1,7 +1,10 @@
 .section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   position: relative;
-  height: 90rem;
-
+  height: 120rem;
+  // margin: 30rem 0;
   &__title {
     margin-top: 10rem;
     font-size: $font-size-0;
@@ -18,6 +21,7 @@
 
 .testimonials {
   background-color: $grey-2;
+  // padding: 1rem 0;
 }
 
 .heading-secondary {

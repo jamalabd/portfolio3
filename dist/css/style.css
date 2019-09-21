@@ -56,6 +56,9 @@ li {
 .u-margin-bottom-med {
   margin-bottom: 10rem; }
 
+.u-margin-bottom-lg {
+  margin-bottom: 15rem; }
+
 .u-margin-bottom-med-2 {
   margin-bottom: 20rem; }
 
@@ -154,7 +157,7 @@ li {
   .shrink-btn:active {
     border: none;
     background-color: #000;
-    color: #E46C28; }
+    color: #fff; }
 
 .bg-video {
   height: 100%;
@@ -186,6 +189,7 @@ li {
       outline: none; }
 
 .input {
+  color: #fff;
   border-radius: 3px;
   background-color: #292C34;
   border-style: none;
@@ -212,13 +216,12 @@ li {
     margin-right: 4rem;
     margin-top: 0.6rem; }
   .nav-bar__anchor {
-    position: relative;
-    transition: all 2s ease-in; }
+    position: relative; }
     .nav-bar__anchor::after {
       position: absolute;
       display: inline-block;
       content: "";
-      background: #000;
+      background: #fff;
       z-index: 100;
       width: 0;
       height: 2px;
@@ -227,8 +230,6 @@ li {
       transition: all 0.3s; }
     .nav-bar__anchor:hover:after {
       width: 100%; }
-    .nav-bar__anchor:hover {
-      color: #000; }
 
 .shrink {
   border: none;
@@ -333,8 +334,11 @@ li {
     right: -1.5rem; }
 
 .section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   position: relative;
-  height: 90rem; }
+  height: 120rem; }
   .section__title {
     margin-top: 10rem;
     font-size: 1.4rem;

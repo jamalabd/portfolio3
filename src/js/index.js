@@ -10,7 +10,6 @@ $(document).ready(function() {
     } else {
       $('.nav-bar').removeClass('shrink');
       $('.btn-primary').removeClass('shrink-btn');
-
     }
   })
 
