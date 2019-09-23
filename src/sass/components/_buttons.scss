@@ -27,6 +27,13 @@
       background-color: $white-1;
       color: $black-1;
     }
+    @include respond(phone) {
+      margin-top: 1rem;
+      width: 10rem;
+      height: 3rem;
+      background-color: $orange-1;
+      color: $white-1;
+    }
   }
 
   &-secondary {
@@ -37,6 +44,9 @@
     &:active {
       background-color: $white-1;
       color: $black-1;
+    }
+    @include respond(phone) {
+      padding-top: 1rem;
     }
   }
 }
@@ -60,10 +70,16 @@
 
   &--primary {
     display: inline-block;
-    font-size: 7rem;
+    font-size: 4rem;
     position: absolute;
-    top: 150%;
+    top: 120%;
     left: 45%;
+  }
+  @include respond(phone) {
+    display: none;
+  }
+  @include respond(tab-port) {
+    display: none;
   }
 }
 

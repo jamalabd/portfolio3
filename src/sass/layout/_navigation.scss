@@ -7,14 +7,31 @@
   z-index: 10000;
   font-size: $font-size-1;
   transition: all 0.5s;
+  padding: 2rem;
+  align-items: center;
 
-  ul {
+  &__list {
     display: flex;
+    @include respond(phone) {
+      // position: absolute;
+      // top: 60%;
+      // left: 50%;
+      // transform: translate(-60%,-50%);
+      // display: flex;
+      // flex-direction: column;
+      // justify-content: center;
+      // align-items: center;
+      // font-size: $font-size-5;
+    }
   }
 
   &__item {
     margin-right: 4rem;
     margin-top: 0.6rem;
+    @include respond(phone) {
+      margin: 1rem 0;
+      color: $black-1;
+    }
   }
 
   &__anchor {
@@ -31,11 +48,71 @@
       left: 0;
       bottom: -10px;
       transition: all 0.3s;
+      @include respond(phone) {
+        background: $black-1;
+      }
     }
 
     &:hover:after {
       width: 100%;
     }
+    @include respond(phone) {
+      color: $black-1;
+    }
+  }
+
+  &__wrap {
+    margin-left: auto;
+    @include respond(phone) {
+      display: none;
+    }
+  }
+  @include respond(phone) {
+    padding: 0 2rem;
+    position: fixed;
+  }
+}
+
+.nav-burger {
+  margin: 2rem 2rem 0 auto;
+  display: none;
+  width: 2.7rem;
+  height: 5rem;
+  cursor: pointer;
+  position: relative;
+
+  &__line {
+    background-color: $white-1;
+    height: 0.3rem;
+    width: 100%;
+    margin-bottom: 0.6rem;
+    position: absolute;
+    transition: all 0.2s ease;
+  }
+
+  &__line-1 {
+    top: 0;
+  }
+
+  &__line-2 {
+    top: 1rem;
+  }
+
+  &__line-3 {
+    top: 2rem;
+  }
+  @include respond(phone) {
+    display: block;
+  }
+}
+
+.brand-name {
+  width: 12rem;
+  z-index: 100;
+
+  &__logo {
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -43,4 +120,48 @@
   border: none;
   height: 6rem;
   background-color: rgba($black-1, 0.8);
+  @include respond(phone) {
+    height: 7rem;
+  }
+}
+
+.toggle.nav-burger__line-1 {
+  transform: rotate(-135deg);
+  top: 1rem;
+  display: none;
+}
+
+.toggle.nav-burger__line-2 {
+  transform: rotate(45deg);
+}
+
+.toggle.nav-burger__line-3 {
+  transform: rotate(-45deg);
+  top: 1rem;
+}
+
+.mobileList {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-60%,-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: $font-size-5;
+}
+
+.mobileWrap {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: $white-1;
+  width: 100%;
+  height: 40rem;
+}
+
+.black {
+  background: $black-1;
 }

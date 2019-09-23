@@ -1,17 +1,36 @@
-.heading-primary {
-  width: 90rem;
-  height: 40rem;
+.heading {
+  &-primary {
+    width: 90rem;
+    height: 40rem;
 
-  &--main {
-    color: $black-1;
-    display: block;
-    padding: 1rem 6rem;
-    font-size: 14rem;
-    font-weight: 400;
-    font-family: 'Lobster';
+    &--main {
+      color: $black-1;
+      display: block;
+      padding: 1rem 6rem;
+      font-size: 14rem;
+      font-weight: 400;
+      font-family: 'Lobster';
+      @include respond(phone) {
+        font-size: 10rem;
+        padding: 0;
+        width: 100%;
+      }
+    }
+
+    &--sub {
+      color: $white-1;
+    }
+    @include respond(tab-port) {
+      width: 70rem;
+    }
+    @include respond(phone) {
+      width: 100%;
+      height: 25rem;
+    }
   }
 
-  &--sub {
-    color: $white-1;
+  &-secondary {
+    font-size: $font-size-6;
+    margin-bottom: 1rem;
   }
 }

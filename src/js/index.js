@@ -13,4 +13,12 @@ $(document).ready(function() {
     }
   })
 
+  $('.nav-burger').click(function() {
+    $('.nav-bar__list').toggleClass('mobileList');
+    $('.nav-burger__line').toggleClass('toggle');
+    $('.nav-bar__wrap').toggleClass('mobileWrap');
+    $('.nav-burger__line').toggleClass('black');
+
+  });
+
 })

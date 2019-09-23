@@ -10,6 +10,9 @@
   &-1 {
     position: absolute;
     clip-path: polygon(50% 0%, 100% 0, 100% 75%, 50.3% 100%, 0 75%, 0 0);
+    @include respond(phone) {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
   }
 
   &-2 {}

@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
 
 <head>
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
   <meta charset="utf-8" />
   <link href="https://fonts.googleapis.com/css?family=Asap:400,500,700|Lato:400,700|Lobster&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
@@ -10,30 +11,36 @@
 </head>
 
 <body>
+  <nav class="nav-bar">
+    <div class="brand-name">
+      <img class="brand-name__logo" src="./resources/transparent-HQ.png" alt="Logo">
+    </div>
+    <div class="nav-bar__wrap">
 
+      <ul class="nav-bar__list">
+        <li class="nav-bar__item">
+          <a href="#skills" class="nav-bar__anchor">skills</a>
+        </li>
+        <li class="nav-bar__item">
+          <a href="#work" class="nav-bar__anchor">Work</a>
+        </li>
+        <li class="nav-bar__item">
+          <a href="#testimonials" class="nav-bar__anchor">Testimonials</a>
+        </li>
+        <li class="nav-bar__item">
+          <a href="#contact" class="nav-bar__anchor">Contact</a>
+        </li>
+        <a href="#" role="button" class="btn btn-primary">Resume</a>
+      </ul>
+
+    </div>
+    <div class='nav-burger'>
+      <div class='nav-burger__line nav-burger__line-1'></div>
+      <div class='nav-burger__line nav-burger__line-2'></div>
+      <div class='nav-burger__line nav-burger__line-3'></div>
+    </div>
+  </nav>
   <header class="header">
-    <nav class="nav-bar u-padding-small">
-      <div class="brand-name">
-        <img class="brand-name__logo" src="./resources/transparent-HQ.png" alt="Logo">
-      </div>
-      <div class="u-margin-left-auto">
-        <ul class="nav-bar__list">
-          <li class="nav-bar__item">
-            <a href="#skills" class="nav-bar__anchor">skills</a>
-          </li>
-          <li class="nav-bar__item">
-            <a href="#work" class="nav-bar__anchor">Work</a>
-          </li>
-          <li class="nav-bar__item">
-            <a href="#testimonials" class="nav-bar__anchor">Testimonials</a>
-          </li>
-          <li class="nav-bar__item">
-            <a href="#contact" class="nav-bar__anchor">Contact</a>
-          </li>
-          <a href="#" role="button" class="btn btn-primary">Resume</a>
-        </ul>
-      </div>
-    </nav>
     <video class="bg-video bg-video-1" autoplay muted loop>
       <source src="./resources/videos/Computer_guy.mp4" type="video/mp4">
       Your browser is not supported!
@@ -50,7 +57,7 @@
   </header>
   <main class="main">
     <section class="skills section" id="skills">
-      <div class="u-margin-bottom-lg u-margin-top-lg text-center">
+      <div class="section-holder">
         <p class="section__title">
           Skills
         </p>
@@ -60,7 +67,6 @@
         <p class="section__paragraph">
           Developing responsive, beautifule, and symetic websites using the latest web technologies. Below are all the skills I currently use to serve clients.
         </p>
-
       </div>
 
       <div class="container">
@@ -128,7 +134,8 @@
         </div>
     </section>
     <section class="work section" id="work">
-      <div class="u-margin-bottom-lg u-margin-top-lg text-center">
+      <div class="section-holder">
+
         <p class="section__title">
           Work
         </p>
@@ -139,15 +146,16 @@
           Take a look at some the websites I have recently built.
         </p>
       </div>
+
       <div class="container">
         <div class="container__box">
-          <div class="container__box-holder u-margin-bottom-xsmall">
+          <div class="container__box-holder ">
             <a href="https://jamalabd.github.io/Jumpstart/" target="_blank">
               <img src="./resources/Screen-shot-1.png" alt="website" class="container__box-img">
             </a>
           </div>
           <div class="container__box-info">
-            <p class=" container__box-title u-margin-bottom-xsmall">
+            <p class=" container__box-title ">
               Jumpstart
             </p>
             <P class="container__box-description">
@@ -157,8 +165,9 @@
         </div>
       </div>
     </section>
-    <section class="testimonials section" id="testimonials">
-      <div class="u-margin-bottom-small u-margin-top-small text-center">
+    <section class="testimonial section" id="testimonials">
+      <div class="section-holder">
+
         <p class="section__title">
           Testimonials
         </p>
@@ -196,7 +205,7 @@
         Your browser is not supported!
       </video>
       <div class="contact" id="contact">
-        <p class="section__title">
+        <p class="contact__title">
           Contact
         </p>
         <form class="form" method="POST" role="form" action="https://formspree.io/jamalabdul47@gmail.com">

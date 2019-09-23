@@ -2,11 +2,11 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  position: relative;
-  height: 120rem;
-  // margin: 30rem 0;
+  align-items: center;
+  // height: 120rem;
+  margin-bottom: 10rem;
+
   &__title {
-    margin-top: 10rem;
     font-size: $font-size-0;
     color: $orange-1;
   }
@@ -16,15 +16,19 @@
     font-size: $font-size-1;
     color: $grey-1;
     width: 60rem;
+    @include respond(phone) {
+      width: 90%;
+    }
   }
+
+  &-holder {
+    text-align: center;
+    margin: 10rem auto;
+  }
+  @include respond(phone) {}
 }
 
-.testimonials {
-  background-color: $grey-2;
+.testimonial {
+  // background-color: $grey-2;
   // padding: 1rem 0;
-}
-
-.heading-secondary {
-  font-size: $font-size-6;
-  margin-bottom: 1rem;
 }

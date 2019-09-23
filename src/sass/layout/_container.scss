@@ -6,8 +6,8 @@
   &__item {
     display: flex;
     flex-direction: column;
-    width: 20rem;
-    height: 20rem;
+    width: 15rem;
+    height: 15rem;
     margin: 1rem;
     box-shadow: 0 0 47px -1px rgba(153,153,153,.2);
     border-radius: 7px;
@@ -15,6 +15,14 @@
     align-items: center;
     background-color: $white-1;
     font-size: $font-size-1;
+    @include respond(tab-port) {
+      width: 25rem;
+      height: 25rem;
+    }
+    @include respond(phone) {
+      width: 15rem;
+      height: 15rem;
+    }
   }
 
   &__icon {
@@ -25,11 +33,16 @@
     font-size: $font-size-1;
     width: 30rem;
     height: 45rem;
+    text-align: center;
 
     &-holder {
       width: 30rem;
       height: 30rem;
       box-shadow: 0 0 47px -1px rgba(153,153,153,.2);
+      @include respond(phone) {
+        width: 20rem;
+        height: 20rem;
+      }
     }
 
     &-img {
@@ -52,6 +65,13 @@
     &-description {
       font-weight: bold;
       font-size: $font-size-2;
+      @include respond(phone) {
+        // width: 15rem;
+      }
+    }
+    @include respond(phone) {
+      width: 20rem;
+      height: 35rem;
     }
   }
 
@@ -62,6 +82,14 @@
       width: 30rem;
       margin: 2rem;
       position: relative;
+      @include respond(tab-port) {
+        width: 20rem;
+        height: 20rem;
+      }
+      @include respond(phone) {
+        width: 20rem;
+        height: 20rem;
+      }
     }
 
     &__img {
