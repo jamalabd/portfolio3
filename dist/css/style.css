@@ -454,6 +454,7 @@ li {
   .container__icon {
     width: 5rem; }
   .container__box {
+    margin: 4rem;
     font-size: 1.6rem;
     width: 30rem;
     height: 45rem;
@@ -475,6 +476,7 @@ li {
       .container__box-img:hover {
         transform: scale(1.07); }
     .container__box-title {
+      margin-top: 1rem;
       color: #9B9B9B;
       font-size: 1.4rem; }
     .container__box-description {
